@@ -1,21 +1,28 @@
-.gallery {
-  display: flex;
-  justify-content: space-between;
-  gap: 32px;
-  perspective: 800px;
+section {
+  background-color: rgb(65, 63, 64);
 }
-.gallery .card {
+section .gallery {
+  background-image: url(../images/finish.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  height: 750px;
+}
+section .gallery .card {
   position: relative;
-  width: 120px;
-  height: 160px;
+  width: 250px;
+  height: 260px;
   cursor: position;
   transition: 1s ease-in-out;
   transform-style: preserve-3d;
 }
-.gallery .card:hover {
+section .gallery .card:hover {
   transform: rotateY(0.5turn);
 }
-.gallery .card .card__side {
+section .gallery .card .card__side {
   position: absolute;
   top: 0;
   left: 0;
@@ -24,12 +31,12 @@
   height: 100%;
   transition: 1s ease-in-out;
 }
-.gallery .card .card__side img {
-  width: 120px;
-  height: 160px;
+section .gallery .card .card__side img {
+  width: 250px;
+  height: 260px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.gallery .card .card__side--back {
+section .gallery .card .card__side--back {
   transform: rotateY(0.5turn);
 }/*# sourceMappingURL=main.css.map */
