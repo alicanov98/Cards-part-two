@@ -13,7 +13,7 @@
   transform-style: preserve-3d;
 }
 .gallery .card:hover {
-  transform: rotate(0.5turn);
+  transform: rotateY(0.5turn);
 }
 .gallery .card .card__side {
   position: absolute;
@@ -31,5 +31,5 @@
      object-fit: cover;
 }
 .gallery .card .card__side--back {
-  transform: rotate(0.5turn);
+  transform: rotateY(0.5turn);
 }/*# sourceMappingURL=main.css.map */
